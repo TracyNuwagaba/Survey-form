@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outbox EDU Survey Form</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Outbox EDU Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve</p>
+        </header>
+        <form action="" id="survey-form" name="surveyform" onsubmit="return validate()">
+            <div class="form-group">
+                <label for="name-label">Name</label>
+                <input 
+                    type="text" 
+                    name="name" 
+                    id="name" 
+                    class="form-control" 
+                    placeholder="Enter your name"
+                > 
+            </div> <br>
+            <div class="form-group">
+                <label for="email-label">Email</label>
+                <input 
+                    type="email" 
+                    name="email" 
+                    id="email" 
+                    class="form-control"
+                    placeholder="Enter your email" 
+                >
+            </div> <br>
+            <div class="form-group">
+                <label for="number-label">
+                    Age
+                    <span>(optional)</span>
+                </label>
+                <input 
+                    type="number" 
+                    name="age" 
+                    id="number" 
+                    class="form-control"
+                    placeholder="Age" 
+                    min="10" 
+                    max="50"
+                >
+            </div>
+            <div class="form-group">
+                <p>What is your current role?</p>
+                <select name="role" id="drop-down" >
+                    <option value="" disabled selected>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="employee">Employee</option>
+                    <option value="freelance">Freelance</option>
+                    <option value="">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Gender</p>
+                <label for="gender">
+                    <input 
+                        type="radio" 
+                        name="gender" 
+                        id="gender" 
+                        value="male"
+                    >
+                    Male
+                </label> 
+                <label for="gender">
+                    <input 
+                        type="radio" 
+                        name="gender" 
+                        id="gender" 
+                        value="female"
+                    >
+                    Female
+                </label>
+            </div>
+            <div class="form-group">
+                <p>What is your favorite feature about Outbox EDU?
+                    <span>(Check all that apply)</span>
+                </p>
+                <label for="challenges">
+                    <input 
+                        type="checkbox" 
+                        name="challenges" 
+                        id="challenges" 
+                        value="challenges"
+                    >
+                    Challenges
+                </label> 
+                <label for="projects">
+                    <input 
+                        type="checkbox" 
+                        name="projects" 
+                        id="projects" 
+                        value="projects"
+                    >
+                    Projects
+                </label> 
+                <label for="pairProgramming">
+                    <input 
+                        type="checkbox" 
+                        name="pairProgramming" 
+                        id="pairProgramming" 
+                        value="pairProgramming"
+                    >
+                    Pair Programming
+                </label> 
+                <label for="community">
+                    <input 
+                        type="checkbox" 
+                        name="community" 
+                        id="community" 
+                        value="community"
+                    >
+                    Community
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Any Comments or Suggestions?</p>
+                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            </div> 
+            <div class="form-group">
+                <input type="submit" value="Submit" id="submit">
+            </div>
+        </form>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
